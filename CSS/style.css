@@ -1,7 +1,125 @@
-h1 {
-color: blue;
+body {
+	color: green;
+	}
+
+.my-class-1 a {
+	color: inherit;
+	}
+	
+.my-class-2 a {
+	color: initial;
+	}
+	
+.my-class-3 a {
+	color: unset;
+	}
+	
+blockquote {
+	background-color: red;
+	border: 5px solid green;
+	max-width: 50%;
+	}
+
+.fix-this {
+	all: initial;
+	}	
+	
+	
+h2 {
+font-size: 2em;
+color: #000;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-ul {
-color: red;
+.small {
+font-size: 1em;
 }
+
+.bright {
+color: rebeccapurple;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance */
+
+/* selectors 0101 & 0201 are competing - the second wins. It as an extra ID selector in the chain; it has a higher value
+
+/* specificity: 0101 */
+#outer a {
+	background-color: red;
+	}
+	
+/* specificity: 0201 */
+#outer #inner a {
+	background-color: blue;
+	}
+	
+/* selectors 0104 & 0113 are competing over the styling of the link's text color - 0113 winds because the .nav class selector has a higher priority */
+	
+/* specificity: 0104 */
+#outer div ul li a {
+	color: yellow;
+	}
+	
+/* specificity: 0113 */
+#outer div ul .nav a {
+	color: white;
+	}
+
+/* 0024 & 0023 are competing over the styling of the links when hovered. 0024 win because it has one more selector in the chain, meaning its more specific. 0033 wins over both 0024 & 0023 because an element has been swapped for a class selector */
+
+/* specificity: 0024 */
+div div li:nth-child(2) a:hover {
+	border: 10px solid black;
+	}
+
+/* specificity: 0023 */
+div li:nth-child(2) a:hover {
+	border: 10px dashed black;
+	}
+	
+/* specificity: 0033 */
+div div .nav:nth-child(2) a:hover {
+	border: 10px double black;
+	}
+	
+a {
+	display: inline-block;
+	line-height: 40px;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	width: 200px;
+	margin-bottom: 10px;
+	}
+	
+ul {
+	padding: 0;
+	}
+	
+li {
+	list-style-type: none;
+	}
+	
+	
+#winning {
+	background-color: red;
+	border: 1px solid black;
+	max-width: 50%;
+	}
+	
+.better {
+	background-color: gray;
+	border: none !important;
+	}
+
+p {
+	background-color: blue;
+	color: white;
+	padding: 5px;
+	}
+	
+	
+	
+	
+	
+	

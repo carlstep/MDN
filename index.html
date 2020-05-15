@@ -3,17 +3,42 @@
 <head>
 <meta charset="utf-8">
 <title>MDN Playground</title>
-<link href="../CSS/style.css" type="stylesheet"/>
+<link rel="stylesheet" href="CSS/style.css" />
+
 </head>
 
 <body>
 <h1>this is a list</h1>
 	<ul>
-		<li>Default link color</li>
-		<li>Inherit the link color</li>
-		<li>reset the link color</li>
-		<li>unset the link color</li>
+		<li>Default <a href="#">link</a> color</li>
+		<li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+		<li class="my-class-2">reset the <a href="#">link</a> color</li>
+		<li class="my-class-3">unset the <a href="#">link</a> color</li>
 	</ul>
+
+<blockquote>
+	<p>This blockquote is styled</p>
+</blockquote>
+
+<blockquote class="fix-this">
+	<p>this blockquote is not styled</p>
+</blockquote>
+
+<h2>Heading with no class</h2>
+<h2 class="small">Heading with class of small</h2>
+<h2 class="bright">Heading with class of bright</h2>
+
+<div id="outer" class="container">
+	<div id="inner" class="container">
+	<ul>
+	<li class="nav"><a href="#">One</a></li>
+	<li class="nav"><a href="#">Two</a></li>
+	</ul>
+	</div>
+</div>
+
+<p class="better">This is a paragraph.</p>
+<p class="better" id="winning">One selector to rule them all!</p>
 
 </body>
 </html>
