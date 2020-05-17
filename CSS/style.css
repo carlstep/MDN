@@ -119,7 +119,35 @@ p {
 	}
 	
 	
+h1 {
+	color: blue;
+	}
+
+.special {
+	color: blue;
+	}
 	
+h1, .special {
+	color: blue;
+	}
 	
+h1,
+.special {
+	color: blue;
+	}
 	
+.notebook {
+	border: 4px solid #999;
+	padding: .5em;
+	}
+
+.notebook.warning {
+	border-color: orange;
+	font-weight: bold;
+	}
+
+.notebook.danger {
+	border-color: red;
+	font-weight: bold;
+	}
 	
